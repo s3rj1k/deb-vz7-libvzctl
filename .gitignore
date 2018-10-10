@@ -1,0 +1,6 @@
+*.orig.tar
+BUILD/*
+*.deb
+*.build
+*.buildinfo
+*.changes

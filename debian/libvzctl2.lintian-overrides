@@ -1,0 +1,4 @@
+# ignore changelog bug, not debian upstream package
+libvzctl2: new-package-should-close-itp-bug
+# ignore this, looks weird
+libvzctl2: package-name-doesnt-match-sonames libvzctl2-2

@@ -1,0 +1,25 @@
+Source: libvzctl
+Section: libs
+Priority: optional
+Maintainer: s3rj1k <evasive.gyron@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: libvzctl-dev
+Section: libdevel
+Architecture: amd64
+Depends: libvzctl7 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: OpenVZ Containers API library.
+ OpenVZ Containers API library, component of OpenVZ
+ .
+ This package contains headers for OpenVZ Containers API library.
+
+Package: libvzctl2
+Architecture: amd64
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: OpenVZ Containers API library.
+ OpenVZ Containers API library, component of OpenVZ
+ .
+ This package contains OpenVZ Containers API library.

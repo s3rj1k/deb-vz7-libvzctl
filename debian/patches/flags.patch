@@ -1,0 +1,12 @@
+Index: BUILD/configure.ac
+===================================================================
+--- BUILD.orig/configure.ac
++++ BUILD/configure.ac
+@@ -105,6 +105,7 @@ CFLAGS="${CFLAGS} -Wall -Werror -Wpointe
+ CFLAGS="${CFLAGS} -Wcast-align -Wno-unused-parameter"
+ CFLAGS="${CFLAGS} -Wno-missing-field-initializers"
+ CFLAGS="${CFLAGS} -D_FILE_OFFSET_BITS=64"
++CFLAGS="${CFLAGS} -Wno-format-security"
+ 
+ if test x$build_cpu = xppc64 -o x$build_cpu = xpowerpc64; then
+ 	CFLAGS="${CFLAGS} -m64"
